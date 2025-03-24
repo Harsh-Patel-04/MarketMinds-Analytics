@@ -1441,6 +1441,8 @@ def main():
     if st.session_state.user is None:
         st.sidebar.title("Welcome to MarketMinds")
 
+        apply_theme()
+
         with st.sidebar: 
             try:
                 lottie_animation = load_lottiefile("lottie_animation.json")
